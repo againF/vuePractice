@@ -1,4 +1,5 @@
 # vue-practice
+https://againf.github.io/vuePractice/
 
 ## Project setup
 ```
