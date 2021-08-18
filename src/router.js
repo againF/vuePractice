@@ -5,6 +5,7 @@ import dataDemo from './pages/dataDemo.vue';
 import firstUpperCase from './pages/firstUpperCase.vue';
 import vIfRepeat from './pages/vIfRepeat.vue';
 import tagSelect from './pages/tagSelect.vue';
+import ajax from './pages/ajax.vue';
 
 const routes = [
     {
@@ -36,6 +37,10 @@ const routes = [
     {
         path: '/tagSelect',
         component: tagSelect
+    },
+    {
+        path: '/ajax',
+        component: ajax
     }
     
 ]
