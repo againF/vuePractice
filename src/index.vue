@@ -12,6 +12,7 @@
       <router-link to="/vIfRepeat">v-if的dom复用机制导致的onclick未被销毁</router-link>
       <router-link to="/tagSelect">tag选择</router-link>
       <router-link to="/ajax">ajax</router-link>
+      <router-link to="/lazyload">lazyload</router-link>
     </div>
         <router-view></router-view>
     </div>

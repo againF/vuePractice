@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debounce</title>
+</head>
+
+<body>
+    <input id="input" type="text">
+    <script>
+        // function debounce(delay) {
+        //     let timer;
+        //     return function (value) {
+        //         clearTimeout(timer);
+        //         timer = setTimeout(() => {
+        //             console.log('value: ', value);
+
+        //         }, delay);
+        //     }
+        // }
+        // let de = debounce(1000)
+        // document.querySelector("#input").onkeyup = function (e) {
+        //     de(e.target.value);
+        // }
+        function debounce(delay, callback) {
+            let timer;
+            return function (value) {
+                clearTimeout(timer);
+                timer = setTimeout(() => {
+                    callback(value)
+                }, delay);
+            }
+        }
+
+        function fn(value) {
+            console.log('value: ', value);
+
+        }
+        let de = debounce(1000, fn)
+        document.querySelector("#input").onkeyup = function (e) {
+            de(e.target.value);
+        }
+    </script>
+</body>
+
+</html>

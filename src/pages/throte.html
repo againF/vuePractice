@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thro</title>
+</head>
+
+<body>
+    <button id="btn">ok</button>
+    <script>
+        function cl() {
+            console.log(Math.random());
+
+        }
+
+        function thro(delay, callback) {
+            let flag;
+            return function () {
+                if (!flag) {
+                    flag = setTimeout(function () {
+                        callback();
+                        flag = null;
+                    }, delay)
+                }
+            }
+
+        }
+        document.querySelector("#btn").onclick = thro(2000, cl)
+    </script>
+</body>
+
+</html>

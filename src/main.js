@@ -3,6 +3,9 @@ import App from './App.vue'
 import index from './index.vue'
 import VueRouter from 'vue-router'
 import routes from './router.js'
+import VueLazyload from 'vue-lazyload'
+
+Vue.use(VueLazyload)
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 

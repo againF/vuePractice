@@ -6,6 +6,7 @@ import firstUpperCase from './pages/firstUpperCase.vue';
 import vIfRepeat from './pages/vIfRepeat.vue';
 import tagSelect from './pages/tagSelect.vue';
 import ajax from './pages/ajax.vue';
+import lazyload from './pages/lazyload.vue';
 
 const routes = [
     {
@@ -41,6 +42,10 @@ const routes = [
     {
         path: '/ajax',
         component: ajax
+    },
+    {
+        path: '/lazyload',
+        component: lazyload
     }
     
 ]
